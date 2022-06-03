@@ -1,0 +1,230 @@
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100vw;
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1.5rem 0;
+    padding: 0 1rem;
+  }
+}
+
+.wrapper .item_left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .item_left .pic2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+
+@media screen and (max-width: 760px) {
+  .wrapper .item_left .pic2 {
+    height: 18rem;
+  }
+}
+
+.wrapper .item_left span {
+  display: block;
+  width: 80px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 0.4rem 0.2rem;
+  color: white;
+  background-color: #e38e18;
+  text-align: center;
+  text-transform: capitalize;
+  position: absolute;
+  top: 5%;
+  right: 0;
+}
+
+.wrapper .item_order {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .item_order .pic2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+
+@media screen and (max-width: 760px) {
+  .wrapper .item_order .pic2 {
+    height: 18rem;
+  }
+  .wrapper .item_order .pic2 span {
+    display: block;
+    width: 80px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 0.4rem 0.2rem;
+    color: white;
+    background-color: #e38e18;
+    text-align: center;
+    text-transform: capitalize;
+    position: absolute;
+    top: 12%;
+    right: 0;
+  }
+}
+
+.wrapper .item_right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+}
+
+@media screen and (max-width: 760px) {
+  .wrapper .item_right {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+.wrapper .item_right h2 {
+  padding: 0.3rem;
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e38e18;
+  text-align: center;
+  letter-spacing: 0.2;
+  line-height: 2rem;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper .item_right h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.wrapper .item_right p {
+  color: #222222;
+  padding: 0.3rem;
+  letter-spacing: 0.1rem;
+  display: block;
+  width: 96%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper .item_right p {
+    width: 100%;
+  }
+}
+
+.wrapper button {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  background-color: #160e39;
+  color: #f2f2f2;
+  font-size: 0.8rem;
+  border-radius: 0px;
+  padding: 0.8rem 1.5rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+@media screen and (max-width: 760px) {
+  .wrapper button {
+    width: 40%;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper button {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+
+.wrapper button > a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: whitesmoke;
+}
+
+.wrapper button > a:hover {
+  color: #08445e;
+  border-radius: 5px;
+}
+
+.wrapper button:hover {
+  background-color: #e38e18;
+  color: #08445e;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=Home_section.css.map */

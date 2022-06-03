@@ -1,0 +1,25 @@
+.item {
+  height: 70vh;
+  width: 100%;
+}
+
+.item .pic {
+  height: 70vh;
+  width: 100%;
+}
+
+.item .pic .picImage {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 70vh;
+}
+
+.item h3 {
+  color: blue;
+}
+
+.item p {
+  color: blue;
+}
+/*# sourceMappingURL=Sliders.css.map */

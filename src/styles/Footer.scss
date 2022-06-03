@@ -1,0 +1,98 @@
+.container__footer{
+  display: flex;
+   height: max-content;
+   padding: 2rem 0.2rem; 
+   width: 100%;
+   background-color: rgb(22,14,57);
+   .wrapper{
+  display: flex;
+  color:white;
+  justify-content: space-around;
+  align-items: flex-start;
+  @media screen and (max-width:768px){
+    flex-direction: column;
+  }
+  .cols{
+      padding: 1rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.5rem;
+      justify-content: space-between;
+      h3{
+        font-size: 1.5rem;
+        font-weight:bold;
+       color: rgb(227,142,24);
+      }
+      .content{
+        a{
+          color: darkgrey;
+          text-decoration:none;
+        }
+        a:hover{
+          text-decoration:underline;
+        }
+      }
+      span{
+        font-size: 1rem;
+        text-align: justify;
+        color: darkgray;
+      }
+      .title{
+        span{
+            display: block;
+            width: 3rem;
+            height: 2px;
+            background-color:white;
+            @media screen  and (max-width:578px){
+              width: 4rem;
+            }
+        }
+        
+      }
+  }
+  .cols:nth-child(3){
+   .content{
+      display: flex;
+      justify-content: flex-start;
+      column-gap:1rem;
+    }
+  }
+  .cols:nth-child(4) .title{
+    h3{
+      text-transform: capitalize;
+    }
+    form{
+      margin-top: 2rem;
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       row-gap:1.5rem;
+       input{
+         padding: 0.8rem 1rem;
+         font-size: 1rem;
+         border: 0px;
+         font-size: 1rem;
+       }
+       input:focus{
+        outline: none;
+    }
+       button{ 
+         display: block !important;
+         padding: 0.5rem 2rem;
+         font-size: 1.5rem;
+         width: max-content;
+         font-weight:bold;
+         background-color: rgb(227,142,24);
+       }
+       button:hover{
+         color: rgb(255,255,255);
+         background-color:rgb(22,14,57);
+         border: 2px solid rgb(227,142,24);
+         border-radius: 10px;
+       }
+     }
+   }
+   }
+   
+}

@@ -1,0 +1,128 @@
+ .container__Testimony{
+        box-shadow: 0 0 25px #e38e18;
+        display: flex;
+        flex-basis: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    padding:1rem;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    height: 100%;
+    background-color: whitesmoke;
+    @media screen and (max-width:765px) {
+      background-color: rgb(22,12,57);
+    }
+   
+    .svg{
+     display:flex;
+     justify-content:center;
+     align-items:center;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+  color: #e38e18;
+    }
+    .comment{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+        p{
+            text-align: justify;
+            letter-spacing: 0.03rem;
+            color:rgb(22,12,57);
+            @media screen and (max-width:765px) {
+              color: white;
+            }
+        }
+    }
+    .pic{
+        bottom: -60px;
+        position: relative;
+        display:block;
+        margin: 0 auto;
+       
+        border-radius: 50%;
+        overflow: hidden ;
+        z-index: 2;
+    
+    }
+}
+
+.wrapper2{
+  flex: 1;
+  margin-top: 3vh;
+  display: block;
+  margin: 0 auto;
+   width: 29vw;
+   margin: 2vw;
+   z-index: 2;
+   height: max-content;
+  transform: translate(0,-50px);
+  transition: all 0.2s ease-in;
+  @media screen and (max-width:765px) {
+    transform: translate(0,0);
+  }
+
+   @media screen and (max-width:768px) {
+     width: 45vw;
+   }
+   @media screen and (max-width:480px) {
+    width: 100vw;
+    margin: 1rem 2vw;
+  }
+     .container{
+      transform: scale(1.05);
+      @media screen and (max-width:768px) {
+        transform: scale(1);
+      }
+         box-shadow: 0 0 25px #e38e18;
+         display: flex;
+         flex-basis: 30vw;
+         flex-direction: column;
+         justify-content: space-evenly;
+     padding:1rem;
+     margin-top: 5vh;
+     margin-bottom: 5vh;
+     height: max-content;
+     background-color: rgb(22,12,57);
+     .svg{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+     margin-top: 0.5rem;
+     margin-bottom: 1.5rem;
+     
+     }
+     .comment{
+         display: flex;
+         position: relative;
+         justify-content: center;
+         align-items: center;
+         height: max-content;
+        
+         p{
+             text-align: justify;
+             letter-spacing: 0.03rem;
+             color:white;
+         }
+     }
+     .pic{
+         bottom: -60px;
+         position: relative;
+         display:block;
+         margin: 0 auto;
+         height: 15vh;
+         width: 15vh;
+         border-radius: 50%;
+         overflow: hidden ;
+         z-index: 2;
+        
+     }
+ }
+}
+.star{
+  span{
+    color: #e38e18;
+  }
+}

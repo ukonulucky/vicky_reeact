@@ -1,0 +1,110 @@
+$primary: rgb(8, 68, 94);
+$secondary: rgb(8, 68, 94);
+$tertiary: rgb(117, 230, 218);
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
+.navbar_Navbar {
+  position:sticky;
+  top: 0px;
+  left: 0px;
+  z-index:2;
+  display: flex;
+  flex-direction:column;
+  background-color: white !important;
+  height: auto;
+  border-bottom: 0.5px solid rgb(248, 241, 241) !important;
+  .nav_inner2 { 
+    display: flex;
+   justify-content: flex-end;
+   margin-left: auto;
+  
+    ul {
+      @media screen and (max-width: 560px) {
+        margin-top: 20px;
+      }
+      display: flex;
+      align-items: center;
+    
+    }
+
+    .items {
+      font-family: Roboto;
+      flex: 1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 1.3rem;
+      padding: 0 0.5rem;
+      color: #160E39 !important;
+      font-weight: normal;
+      text-transform: uppercase;
+      margin: 0 0.2rem;
+      border-width: 5px solid;
+      letter-spacing: 0.1rem;
+      text-decoration: none;
+      &:hover {
+        border-bottom: 3px solid $primary;
+      }
+      @media screen and (max-width: 960px) {
+        font-size: 1rem;
+        font-weight: normal;
+        margin: 0px;
+        padding: 0 0.3rem;
+        text-align: right;
+      }
+      @media screen and (max-width: 760px) {
+        font-size: 0.9rem;
+        margin: 0px;
+        font-weight: normal;
+        padding: 0 0.2rem;
+        text-align: left;
+      }
+    
+    }
+  }
+}
+ .dropDown{
+  font-family: Roboto;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.3rem;
+  padding: 0 0.5rem;
+  color: #160E39 !important;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0 0.2rem;
+  border-width: 5px solid;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  background-color: white !important;
+  &:hover {
+    border-bottom: 3px solid $primary;
+  }
+  @media screen and (max-width: 960px) {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0 0.3rem;
+    text-align: right;
+  }
+  @media screen and (max-width: 760px) {
+    font-size: 0.9rem;
+    margin: 0px;
+    font-weight: normal;
+    padding: 0 0.2rem;
+    text-align: left;
+  }
+
+}
+
+.mydropdown {
+  outline: 0px !important;
+  border:0px !important;
+  &:hover{
+    border:0px !important;
+    
+
+  }
+}

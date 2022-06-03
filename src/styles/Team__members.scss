@@ -1,0 +1,47 @@
+.wrapper {
+  flex: 1;
+  display: block;
+  margin: 0 auto;
+  width: 20vw;
+  margin: 2vw;
+  height: max-content;
+ 
+  @media screen and (max-width: 859px) {
+    width: 45vw;
+  }
+  
+  .container__new {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    justify-content: space-evenly;
+    border-radius: 0px;
+    height: max-content;
+    .pic {
+      position: relative;
+      margin: 0 auto;
+      height: 30vh;
+      width: 100%;
+    
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: max-content;
+      h3 {
+        font-weight: normal;
+        display: flex;
+        font-size: 1rem;
+        text-align: center;
+        color: rgb(22, 14, 57);
+      }
+      p {
+        text-align: justify;
+        letter-spacing: 0.03rem;
+        color: rgb(22, 12, 57);
+      }
+    }
+  }
+}

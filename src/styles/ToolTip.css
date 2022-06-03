@@ -1,0 +1,27 @@
+.word p {
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #e38e18;
+}
+
+.button {
+  background-color: #160e39;
+  border: 0px;
+  color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px;
+}
+
+@media screen and (max-width: 568px) {
+  .button {
+    padding: 10px 40px;
+  }
+}
+/*# sourceMappingURL=ToolTip.css.map */

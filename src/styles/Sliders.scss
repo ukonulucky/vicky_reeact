@@ -1,0 +1,22 @@
+
+.item{
+    height: 70vh;
+    width:100%;
+    .pic{
+        height: 70vh;
+        width:100%;
+        .picImage{
+            width:100%;
+            object-fit: cover;
+            height: 70vh;
+        }
+    }
+ h3{
+     color: blue;
+ }
+ p{
+     color: blue;
+ }
+}
+
+

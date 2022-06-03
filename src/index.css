@@ -1,0 +1,65 @@
+
+
+*{
+  box-sizing: border-box !important;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serifs;
+  
+}
+.myApp{
+  width: 100% !important;
+}
+.index{
+ overflow: hidden ;
+
+}
+
+body{
+  scroll-behavior:smooth;
+}
+.btn-primary {
+  color: #160E39 !important;;
+  background-color: white  !important;
+border: 0px;
+border-color: none;
+
+}
+.btn{
+  border-radius: 0px;
+  border: 0px;
+ 
+}
+.btn:hover{
+  border: 0px;
+}
+.dropdown{
+  border-radius: 0px !important;
+  border: 0px !important;
+  color: red;
+}
+.show{
+ border-width: 0px;
+}
+
+/* styling the tooltip component */
+.my-tooltip > .tooltip-inner{
+  background-color:rgba(22,14,57,);
+  color: white;
+  font-size: 1rem;
+  
+}
+.slick-arrow{
+  position: absolute;
+  z-index: 2;
+}
+.slick-prev{
+  left: 1rem;
+  width: max-content;
+  padding: 0.5rem 1rem;
+}
+.slick-next{
+  right: 1rem;
+  width: max-content;
+  padding: 0.5rem 1rem;
+}
