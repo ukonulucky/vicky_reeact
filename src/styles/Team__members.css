@@ -4,10 +4,10 @@
           flex: 1;
   display: block;
   margin: 0 auto;
-  margin: 2vw;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  margin: 3rem 0;
 }
 
 .team__members__wrapper .container__new {
@@ -31,8 +31,8 @@
 .team__members__wrapper .container__new .pic {
   position: relative;
   margin: 0 auto;
-  height: 30vh;
-  width: 100%;
+  height: 20vw;
+  width: 20vw;
 }
 
 .team__members__wrapper .container__new .info {

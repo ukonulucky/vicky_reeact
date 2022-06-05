@@ -20,10 +20,16 @@ export default class Team__members extends Component {
         fullName: "Eddy Usong",
         details: "Brand And Digital Consultant",
       },
+     
       {
         img: "https://drive.google.com/uc?export=view?&id=1jfF3-1o-Ht126Pv9iqI6nk-dLU-t6Bxh",
         fullName: "Ukonu Lucky",
         details: "Website Developer",
+      },
+      {
+        img:  "https://drive.google.com/uc?export=view?&id=1ifVi4A3bBQV-g9ItM3cwkCZgeYGYqi-k",
+        fullName: "Victoria Ogbonna",
+        details: "Cheif Executive Officer",
       },
       {
         img: "https://drive.google.com/uc?export=view?&id=14-ElWULGvQPYEkSr1bNFnttDlIkdes0v",
@@ -47,7 +53,7 @@ export default class Team__members extends Component {
         {
           breakpoint: 5000,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 1,
             infinite: true,
             autoplay: true,

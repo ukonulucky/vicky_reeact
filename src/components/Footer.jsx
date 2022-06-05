@@ -2,7 +2,7 @@ import React, { useState}  from 'react'
 import "../styles/Footer.css"
 import { Link } from "react-router-dom"
 import axios from "axios"
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedinIn, FaPhone, FaEnvelope  } from "react-icons/fa"
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedinIn, FaPhone, FaEnvelope ,FaYoutube } from "react-icons/fa"
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 function Footer() {
@@ -137,9 +137,14 @@ function Footer() {
             <span> <FaInstagram size="1.2rem" vertical-align="center" /> </span>
             <span><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fvickshomes%3Futm_medium%3Dcopy_link%26fbclid%3DIwAR01HhYqFJUJPdy5MUdtqoPy3gCF2FPjZN84hG9PAY8jnHO24wXlAP6lfwk&h=AT3hPaTcm1yMTIaijNXf-hAy7Z1bwauMXWYoRquUZI8mMdGr-hLswrQGKzoepz-6Aa7AS7BPHtKRKvi7ySvcD-l6G9yNBYKpRpk-QIR6CpeaW_uD2EXrIfdXbPDwHw" target="_blank" rel="noreferrer" >ViHomes</a></span>
           </div>
+          
           <div className="content">
             <span> <FaLinkedinIn size="1.2rem" vertical-align="center" /></span>
             <span><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fvicks-homes%2F%3Ffbclid%3DIwAR0f-ClL_mJvPadzZFgUdTYxN_C37MyUnWGjiFyQ7fN-PdH6Pnco5Vq9Rm0&h=AT3hPaTcm1yMTIaijNXf-hAy7Z1bwauMXWYoRquUZI8mMdGr-hLswrQGKzoepz-6Aa7AS7BPHtKRKvi7ySvcD-l6G9yNBYKpRpk-QIR6CpeaW_uD2EXrIfdXbPDwHw" target="_blank" rel="noreferrer"  >vicks-homes </a></span>
+          </div>
+          <div className="content">
+            <span> <FaYoutube size="1.2rem" vertical-align="center" /></span>
+            <span><a href="https://youtube.com/channel/UCrqiJgWJza9KmwwaaCMMAQQ" target="_blank" rel="noreferrer"  >Vicks Homes </a></span>
           </div>
         </div>
         <div className="cols">
