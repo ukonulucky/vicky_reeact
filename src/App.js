@@ -22,7 +22,7 @@ function App() {
        <Navbar />
            <Home />
               <Footer />
-      <a href="http://wa.me/+2347063033152" target="_blank" rel="noreferrer"  className={ "chat"} >
+      <a href="http://wa.me/+2349028506555" target="_blank" rel="noreferrer"  className={ "chat"} >
             <FaWhatsapp color="darkblue" size="60px"/>
        </a>
         </div>
@@ -34,7 +34,7 @@ function App() {
             <Navbar />
            <Sale />
               <Footer />
-              <a href="http://wa.me/+2347063033152" target="_blank" rel="noreferrer"  className={"chat"} >
+              <a href="http://wa.me/+2349028506555" target="_blank" rel="noreferrer"  className={"chat"} >
             <FaWhatsapp color="darkblue" size="60px"/>
        </a>
        </div>
@@ -44,7 +44,7 @@ function App() {
           <Navbar />
         <About />
               <Footer />
-              <a href="http://wa.me/+2347063033152" target="_blank" rel="noreferrer"  className={"chat"} >
+              <a href="http://wa.me/+2349028506555" target="_blank" rel="noreferrer"  className={"chat"} >
             <FaWhatsapp color="darkblue" size="60px"/>
        </a>
        </div>

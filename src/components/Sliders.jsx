@@ -25,8 +25,7 @@ function Sliders() {
         />
         </div>
       </Carousel.Item>
-
-    
+      
       <Carousel.Item className={ "item" }>
       <div className={"pic"}>
           <img

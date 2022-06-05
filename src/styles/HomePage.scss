@@ -165,6 +165,7 @@
   width: 100%;
   height: max-content;
   .slick-slider{
+    
     .slick-list{
       .slick-current{
         .svg{
@@ -173,14 +174,19 @@
           }
           @media screen and (max-width:559px){
             padding: 2.5rem 0px;
+            
           }
         }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 2rem;
         flex: 1;
         margin-top: 5vh !important;
          display: block;
          margin: 0 auto !important;
         margin: 2vh 0!important;
-         z-index: 2 !important;
+        
          
           height: max-content !important;
          transform: translate(0,-80px) !important;
@@ -192,10 +198,11 @@
           margin-left: 3rem;
         
         };
-        @media screen and (max-width:559px){
-          margin: 0 auto;
+        @media screen and (max-width:759px){
+ 
           margin:2vh 0 !important;
           display: block;
+          margin: 0 auto;
           width: 80vw !important;
         
         }

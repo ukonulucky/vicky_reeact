@@ -86,7 +86,15 @@ export default class Testimony extends Component {
                       slidesToScroll: 1,
                       infinite: true
                   }
-                }
+                },
+                {
+                    breakpoint: 560,
+                    settings: {
+                      slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true
+                    }
+                  }
               ]
             
         };

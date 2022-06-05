@@ -61,7 +61,7 @@ function About({ word, heading }) {
                 </p>
               </div>
               <div className={"carousel"}>
-              <iframe  src="https://www.youtube.com/embed/cCGPBTHIBEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe  src="https://www.youtube.com/embed/cCGPBTHIBEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
             </div>
           </div>

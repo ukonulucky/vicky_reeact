@@ -35,12 +35,6 @@
   }
 }
 
-@media screen and (max-width: 559px) {
-  .container__Testimony {
-    margin-left: 0.5rem;
-  }
-}
-
 .container__Testimony .svg {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,7 +103,7 @@
 
 @media screen and (max-width: 760px) {
   .main__slider {
-    width: 60vw !important;
+    width: 80vw !important;
     margin: 0px;
   }
 }

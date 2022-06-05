@@ -1,4 +1,5 @@
  .container__Testimony{
+   
         box-shadow: 0 0 25px #e38e18;
         display: flex;
         flex-basis: 100%;
@@ -6,6 +7,7 @@
         justify-content: space-evenly;
          padding:1rem;
     margin: 5vh 0rem;
+    
   
     // margin-right:4rem ;
     height: 100%;
@@ -20,7 +22,7 @@
       background-color: rgb(22,12,57);
     }
     @media screen and (max-width:559px) {
-    margin-left: 0.5rem;
+    
     }
     .svg{
      display:flex;
@@ -66,7 +68,7 @@
   padding: 0 2.5rem;
   margin-right: 0.5rem;
   @media screen and (max-width:760px) {
-    width: 60vw !important;
+    width: 80vw !important;
     margin: 0px;
   }
 }
