@@ -14,9 +14,6 @@ import Team__members from "./Team_members";
 
 function HomePage() {
   
- 
-
-
   // const HouseArray = [
   //   {
   //     leftStyles: "item_left",
@@ -45,17 +42,17 @@ function HomePage() {
 
   const letArray = [
     {
-      link: "/sale",
+      link: "/sales",
       details:"LUXURY LISTING ‼‼‼  5 BEDROOM DETACHED DUPLEX WITH A SWIMMING POOL,  AND A ROOM BQ FOR SALE. LOCATION: IKOTA, LEKKI LAGOS",
       img: "https://drive.google.com/uc?export=view?&id=1PD9PCAWCR1jG_pIUNo27ipeNq-gqTMl6"
     },
     {
-      link: "/sale",
+      link: "/sales",
       details:"NEW LISTING ‼‼‼ FULLY DETACHED 6 BEDROOM DUPLEX WITH AN OPEN ROOF TERRACE, SWIMMING POOL AND BQ FOR SALE.",
       img: "https://drive.google.com/uc?export=view?&id=1jQgykGurU5kc563eE2vZyUiUIJrRZabe"
     },
     {
-      link: "/sale",
+      link: "/sales",
       details:"NEW LISTING ‼‼‼ 6 BEDROOM DETACHED DUPLEX , AND ONE ROOM BQ FOR SALE.",
       img: "https://drive.google.com/uc?export=view?&id=160qbhEp6gkp_25NMxR6XIW4eShhuJ2mc"
     },
