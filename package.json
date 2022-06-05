@@ -54,5 +54,9 @@
   "devDependencies": {
     "node-sass": "^7.0.1",
     "sass-loader": "^13.0.0"
-  }
+  },
+  "overrides": {
+    "autoprefixer": "10.4.7"
+    }
 }
+

@@ -1,6 +1,5 @@
 import "../styles/About.css";
 import React from "react";
-import { Carousel } from "react-bootstrap";
 import AppsIcon from "@mui/icons-material/Apps";
 import ToolTipDisplay from "../components/ToolTips";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -9,24 +8,24 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 function About({ word, heading }) {
  
     return (
-      <div className={"container"}>
+      <div className={"container__about"}>
         <div className={"wrapperOuter"}>
-          <div className={'wrapper'}>
+          <div className={'wrapper__about'}>
             <div className={"pic"}>
-              <img
+              <LazyLoadImage
                 width="100%"
-                height="300px"
+                height="100%"
                 src="https://drive.google.com/uc?export=view?&id=1LxHAwR_u5e91Hgdoaf8OSmGvmuilE2qO"
               />
             </div>
           </div>
           <div className={"content3"}>
-            <div className={"wrapper"}>
+            <div className={"wrapper__about"}>
               <h2>Who We Are</h2>
               <div className={"content4"}>
-                <div className={"item"}>
-                  <span>
-                  </span>
+                <div className={"item__about"}>
+                   <span>
+                  </span> 
                   <span>
                     <AppsIcon />
                   </span>
@@ -42,7 +41,7 @@ function About({ word, heading }) {
                 </p>
               </div>
             </div>
-            <div className={"wrapper"}>
+            <div className={"wrapper__about"}>
               <div className={"text"}>
                 <p>
                   VicksHomes has built its reputation on the abilities to respond quickly
@@ -67,12 +66,13 @@ function About({ word, heading }) {
             </div>
           </div>
           <div className={"content2"}>
-            <div className={"wrapper"}>
+            <div className={"wrapper__about"}>
               <div className={"mission"}>
                 <span>
                   <div className={"pic"}>
                     <div className={"innerPic"}>
-                      <img priority="true" src="/imgs/icons/diamondIcon2.png" layout="fill" alt="logo" />
+                    <LazyLoadImage src="https://drive.google.com/uc?export=view?&id=1tujD5IdlnULU05xcAFJs3aVQ6zYbRP5l"  className={"logo"} alt="logo" />
+
                     </div>
                   </div>
                 </span>
@@ -89,7 +89,8 @@ function About({ word, heading }) {
                 <span>
                   <div className={"pic"}>
                     <div className={"innerPic"}>
-                      <img src="/imgs/icons/rocketIcon3.png" priority="true" alt="logo" />
+                    <LazyLoadImage src="https://drive.google.com/uc?export=view?&id=15w34rPvmG_hIAv5pUCvYQLnt4Ncg-IUR"  className={"logo"} alt="icon" />
+
                     </div>    
                   </div>
                 </span>
@@ -117,8 +118,9 @@ function About({ word, heading }) {
             <div className={"col1"}>
               <div className={"list"}>
                 <span>
-                  <div className={"pic"}>
-                    <img src="/imgs/icons/bulbIcon.png"  className={"logo"} alt="logo" />
+                    <div className={"pic"}>
+                    
+                    <LazyLoadImage src="https://drive.google.com/uc?export=view?&id=15h7EHx1_O6XrAryJXYaLpclqxPFIAba7"  className={"logo"} alt="logo" />
                   </div>
                 </span>
                 <span>
@@ -130,8 +132,7 @@ function About({ word, heading }) {
                 <div className={"list"}>
                 <span>
                   <div className={"pic"}>
-                    <img src="/imgs/icons/puzzleIcon.png" className={"logo"} alt="logo" layout="fill" />
-                  </div>
+                  <LazyLoadImage src="https://drive.google.com/uc?export=view?&id=17QCHSZrhpBcjFglSHnuT5tf5pw684vl5"  className={"logo"} alt="logo" />                  </div>
                 </span>
                 <span>
                 <p>
@@ -146,8 +147,8 @@ function About({ word, heading }) {
               <div className={"list"}>
                 <span>
                   <div className={"pic"}>
-                    <img src="/imgs/icons/puzzleIcon.png" className={"logo"} alt="logo" />
-                  </div>
+                  <LazyLoadImage src="https://drive.google.com/uc?export=view?&id=1Ns5Pqsnf5lMP39dWAa-5COGJLB5T8Clx"  className={"logo"} alt="logo" />
+                    </div>
                 </span>
                 <span>
                 <p>
@@ -158,8 +159,7 @@ function About({ word, heading }) {
             <div className={"list"}>
                 <span>
                   <div className={"pic"}>
-                    <img src="/imgs/icons/bulbIcon.png" className={"logo"} alt="logo" />
-                  </div>
+                  <LazyLoadImage src="https://drive.google.com/uc?export=view?&id=1Hdw9iampFEQYCTkUSTSieJZ_zWh88ZhM"  className={"logo"} alt="logo" /> </div>
                 </span>
                 <span>
                   <p>
@@ -174,8 +174,7 @@ function About({ word, heading }) {
             <div className={"list"}>
                 <span>
                   <div className={"pic"}>
-                    <img src="/imgs/icons/bulbIcon.png" className={"logo"} alt="logo"  />
-                  </div>
+                  <LazyLoadImage src="https://drive.google.com/uc?export=view?&id=1pVVz2AOqEUMQak-m6rwqvcRcOWtkgDJo"  className={"logo"} alt="logo" /> </div>
                 </span>
                 <span>
                   <p>

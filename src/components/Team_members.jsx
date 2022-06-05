@@ -21,29 +21,14 @@ export default class Team__members extends Component {
         details: "Brand And Digital Consultant",
       },
       {
-        img: "../images/clients/client8.jpeg",
-        fullName: "Benson Donald",
-        details: "Sales Manager",
+        img: "https://drive.google.com/uc?export=view?&id=1jfF3-1o-Ht126Pv9iqI6nk-dLU-t6Bxh",
+        fullName: "Ukonu Lucky",
+        details: "Website Developer",
       },
       {
-        img: "../images/clients/client9.jpeg",
-        fullName: "Flem Janks",
-        details: "Operational Manager",
-      },
-      {
-        img: "../images/clients/client1.jpeg",
-        fullName: "Oak Boxin",
-        details: "Chief Accountant",
-      },
-      {
-        img: "../images/clients/client2.jpeg",
-        fullName: "Ben France",
-        details: "Chief Adviser",
-      },
-      {
-        img: "../images/clients/client4.jpeg",
-        fullName: "Mikel Okon",
-        details: "Digital Marketer",
+        img: "https://drive.google.com/uc?export=view?&id=14-ElWULGvQPYEkSr1bNFnttDlIkdes0v",
+        fullName: "Noble Reuer",
+        details: "Site Manager",
       }
     ]
   }
@@ -51,19 +36,25 @@ export default class Team__members extends Component {
   
   render() {
     var settings = {
-      arrows: true,
       infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-    initialSlide: 2,
+      initialSlide: 0,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      autospeed: 4000,
+      pauseOnHover: false,
+      arrows:true,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 5000,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1,
-            infinite: true
+            infinite: true,
+            autoplay: true,
+            speed: 2000,
+            autoplaySpeed: 2000,
+            autospeed: 300,
+            arrows:true
           }
         },
         {
@@ -72,7 +63,23 @@ export default class Team__members extends Component {
             slidesToShow: 3,
             slidesToScroll: 1,
             initialSlide: 1,
-            arrows:true
+            arrows: false,
+            autoplay: true,
+            speed: 2000,
+            autoplaySpeed: 2000,
+            autospeed:300
+          }
+        },
+        {
+          breakpoint: 560,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows:false,
+            autoplay: true,
+            speed: 2000,
+            autoplaySpeed: 2000,
+            autospeed:300
           }
         },
         {
@@ -94,7 +101,7 @@ export default class Team__members extends Component {
          <Slider {...settings} >
         {this.teamMembersArray.map((i, k) => {
           return <div key={k}>
-            <div className={"wrapper"}>
+            <div className={"team__members__wrapper"}>
               <div className={"container__new"}>
                 <div className={"pic"}>
                   <LazyLoadImage

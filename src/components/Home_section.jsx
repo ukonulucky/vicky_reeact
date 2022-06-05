@@ -5,7 +5,7 @@ function Home_section({ title, button, url, details, leftStyles}) {
 
   return (
       <div className={"wrapper"}>
-      <div className={ leftStyles ==  "item_left" ? "item_left " : "item_order"}>
+      <div className={ leftStyles ===  "item_left" ? "item_left " : "item_order"}>
         <div className={"pic2"}>
         <img
           className={"pic"}

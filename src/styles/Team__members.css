@@ -1,23 +1,16 @@
-.wrapper {
+.team__members__wrapper {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   display: block;
   margin: 0 auto;
-  width: 20vw;
   margin: 2vw;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
 
-@media screen and (max-width: 859px) {
-  .wrapper {
-    width: 45vw;
-  }
-}
-
-.wrapper .container__new {
+.team__members__wrapper .container__new {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,14 +28,14 @@
   height: max-content;
 }
 
-.wrapper .container__new .pic {
+.team__members__wrapper .container__new .pic {
   position: relative;
   margin: 0 auto;
   height: 30vh;
   width: 100%;
 }
 
-.wrapper .container__new .info {
+.team__members__wrapper .container__new .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,7 +54,7 @@
   height: max-content;
 }
 
-.wrapper .container__new .info h3 {
+.team__members__wrapper .container__new .info h3 {
   font-weight: normal;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,7 +64,7 @@
   color: #160e39;
 }
 
-.wrapper .container__new .info p {
+.team__members__wrapper .container__new .info p {
   text-align: justify;
   letter-spacing: 0.03rem;
   color: #160c39;

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { OverlayTrigger, Button, Tooltip } from "react-bootstrap"
 import "../styles/ToolTip.css";
 function ToolTipDisplay({ word,heading }) {

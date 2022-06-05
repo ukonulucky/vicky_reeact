@@ -61,20 +61,34 @@ export default class Testimony extends Component {
     }
     render() {
         var settings = {
-            // className: "wrapper2",
-            // centerMode: true,
-            // infinite: true,
-            // centerPadding: "60px",
-            infinite: true,
-            arrows:false,
-            autoplay: true,
+            initialSlide: 0,
+            pauseOnFocus: true,
+            autoplay:true,
             autoplaySpeed: 2000,
-            autospeed:300,
-            speed: 500,
-            slidesToScroll: 1,
-          initialSlide: 2,
-            slidesToShow:3,
-            speed: 500
+            autospeed: 300,
+            infinite: true,
+            adaptiveHeight: true,
+            centerMode: true,
+            responsive: [
+                {
+                  breakpoint: 5000,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    
+                  }
+                },
+                {
+                  breakpoint: 760,
+                  settings: {
+                    slidesToShow: 1,
+                      slidesToScroll: 1,
+                      infinite: true
+                  }
+                }
+              ]
+            
         };
         
         const startRating = Array(5).fill().map((_, i) => { return (<span key={i} ><StarIcon /> </span>) })
@@ -84,7 +98,7 @@ export default class Testimony extends Component {
             <Slider {...settings}>
                 
                     { this.testimonyArray.map((i, j) => {
-                    return <div key={ j }>
+                        return <div key={j} className="main__slider" >
                             <div className={"container__Testimony"}>
                                 <div className={"svg"}>
                                     <div className={"star"}>

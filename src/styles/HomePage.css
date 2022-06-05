@@ -71,9 +71,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -201,7 +201,7 @@
 }
 
 .container__Home .wrapper__Home .team {
-  margin-top: 4rem;
+  margin-top: 5rem !important;
   margin-bottom: 1.5rem;
   margin-left: 0.5vw;
   margin-right: 0.5vw;
@@ -224,8 +224,8 @@
           align-items: center;
   font-size: bolder;
   padding: 0.5rem;
-  margin-bottom: 1.5rem;
-  margin-top: 2.5rem;
+  margin-bottom: 3.5rem;
+  margin-top: 2rem;
   font-size: 2.5rem;
   color: #160e39;
   text-transform: uppercase;
@@ -254,6 +254,54 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+}
+
+.clients .slick-slider .slick-list .slick-current {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 5vh !important;
+  display: block;
+  margin: 0 auto !important;
+  margin: 2vh 0 !important;
+  z-index: 2 !important;
+  height: -webkit-max-content !important;
+  height: -moz-max-content !important;
+  height: max-content !important;
+  -webkit-transform: translate(0, -80px) !important;
+          transform: translate(0, -80px) !important;
+  -webkit-transition: all 0.2s ease-in !important;
+  transition: all 0.2s ease-in !important;
+}
+
+@media (min-width: 760px) and (max-width: 920px) {
+  .clients .slick-slider .slick-list .slick-current .svg {
+    padding: 2rem 0px;
+  }
+}
+
+@media screen and (max-width: 559px) {
+  .clients .slick-slider .slick-list .slick-current .svg {
+    padding: 2.5rem 0px;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 920px) {
+  .clients .slick-slider .slick-list .slick-current {
+    margin: 2vh 0 !important;
+    margin: 0 auto;
+    display: block;
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 559px) {
+  .clients .slick-slider .slick-list .slick-current {
+    margin: 0 auto;
+    margin: 2vh 0 !important;
+    display: block;
+    width: 80vw !important;
+  }
 }
 
 .clients h2 {

@@ -1,11 +1,11 @@
-.container{
+.container__about{
   display: block;
   overflow: hidden;
   .wrapperOuter {
     flex: 1;
     display: flex;
     flex-direction: column;
-    .wrapper:nth-child(1) {
+    .wrapper__about:nth-child(1) {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -15,7 +15,7 @@
         flex: 1;
         position: relative;
         display: flex;
-        height: 300px;
+        height: 60vh;
         width: 100%;
       }
     }
@@ -23,7 +23,7 @@
       display: block;
       width: 90vw;
       margin: 0 auto;
-      .wrapper:nth-child(1) {
+      .wrapper__about:nth-child(1) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -39,15 +39,18 @@
         }
 
         .content4 {
+          margin: 2rem 0;
           display: block;
           width: max-content;
           margin: 0 auto;
-          .item {
+          .item__about {
+            
             display: flex;
             justify-content: center;
             align-items: center;
             span:nth-child(1) {
-              margin: 0.5vw;
+              
+              margin-right: 0.5vw;
               display: block;
               height: 3px;
               font-weight: bold;
@@ -55,7 +58,7 @@
               background-color: rgb(14, 53, 182);
             }
             span:nth-child(3) {
-              margin: 0.5vw;
+              margin-left: 0.5vw;
               display: block;
               height: 3px;
               font-weight: bold;
@@ -82,7 +85,7 @@
           }
         }
       }
-      .wrapper:nth-child(2) {
+      .wrapper__about:nth-child(2) {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -112,19 +115,21 @@
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
-          row-gap: 1re;
-          @media screen and (max-width: 560px) {
+          row-gap: 1rem;
+          @media (min-width:560px) and (max-width: 1200px) {
             flex-direction: row;
-            height: 40vh;
+            width: 80%;
+            margin: 0 auto;
             margin: 3rem 0;
           }
           iframe{
             width: 100%;
-            height:40vh;
+            height: 50vh;
             @media screen and (max-width: 560px) {
               display: block;
              width: 90vw;
              margin: 0 auto;
+             margin: 2rem 0;
             }
 
           }
@@ -151,7 +156,7 @@
       align-items: center;
       margin-top: 5rem;
       margin-bottom: 3rem;
-      .wrapper {
+      .wrapper__about {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -420,12 +425,17 @@
           }
           .pic {
             position: relative;
-          
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 40px;
             height: 40px;
             padding: 0.5rem;
             .logo {
               filter: none;
+              width: 40px;
+            height: 40px;
+            
               &:hover {
                 filter: grayscale(100%);
               }

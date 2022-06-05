@@ -46,7 +46,7 @@
         background-color: rgb(22, 14, 57);
         flex: 1;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         margin: 2rem 1rem;
         padding: 0.3rem;
@@ -125,7 +125,7 @@
     }
     // styling the Testimony section
     .team {
-      margin-top: 4rem;
+      margin-top: 5rem !important;
       margin-bottom: 1.5rem;
       margin-left: 0.5vw;
       margin-right: 0.5vw;
@@ -138,8 +138,8 @@
         align-items: center;
         font-size: bolder;
         padding: 0.5rem;
-        margin-bottom: 1.5rem;
-        margin-top: 2.5rem;
+        margin-bottom: 3.5rem;
+        margin-top: 2rem;
         font-size: 2.5rem;
         color: rgb(22, 14, 57);
         text-transform: uppercase;
@@ -164,6 +164,46 @@
   display: block;
   width: 100%;
   height: max-content;
+  .slick-slider{
+    .slick-list{
+      .slick-current{
+        .svg{
+          @media (min-width:760px) and (max-width:920px){
+            padding: 2rem 0px;
+          }
+          @media screen and (max-width:559px){
+            padding: 2.5rem 0px;
+          }
+        }
+        flex: 1;
+        margin-top: 5vh !important;
+         display: block;
+         margin: 0 auto !important;
+        margin: 2vh 0!important;
+         z-index: 2 !important;
+         
+          height: max-content !important;
+         transform: translate(0,-80px) !important;
+        transition: all 0.2s ease-in !important;
+        @media (min-width:760px) and (max-width:920px){
+          margin:2vh 0 !important;
+          margin: 0 auto;
+          display: block;
+          margin-left: 3rem;
+        
+        };
+        @media screen and (max-width:559px){
+          margin: 0 auto;
+          margin:2vh 0 !important;
+          display: block;
+          width: 80vw !important;
+        
+        }
+       
+        
+      };
+    }
+  }
   h2 {
     display: flex;
     justify-content: center;

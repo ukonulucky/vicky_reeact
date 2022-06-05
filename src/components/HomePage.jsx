@@ -1,17 +1,16 @@
 import { Link } from "react-router-dom";
 
 
-import React, { useState } from "react";
+import React from "react";
 
   import Testimony from "./Testimony";
-import Home_section from "./Home_section";
+// import Home_section from "./Home_section";
 import "../styles/HomePage.css";
  import Properties from "./Properties";
 import Team__members from "./Team_members";
 
-import { Carousel } from "react-bootstrap";
-import MultipleItems from "./Sliders3";
-import SimpleSlider from "./Slider2";
+// import MultipleItems from "./Sliders3";
+// import SimpleSlider from "./Slider2";
 
 function HomePage() {
   
@@ -119,21 +118,21 @@ function HomePage() {
           </p>
 
           <div className={"about__search"}>
-            <button>
+            {/* <button>
               <Link to="/let">
                Search For Property To let
               </Link>
-            </button>
-            <button>
-              <Link to="/sale">
+            </button> */}
+            <button> 
+              <Link to="/sales">
                  Search For Property To Buy
               </Link>
             </button>
-            <button>
+            {/* <button>
               <Link to="/project">
                Off Plan Project 
               </Link>
-            </button>
+           </button> */}
           </div>
         </div>
         {/* {latestProperty} */}
@@ -142,14 +141,14 @@ function HomePage() {
       
         <div className={"advert"}>{letProperty}</div>
         <div className={"clients"}>
-          <h2>Testimonies</h2>
+        <h2>Testimonies</h2>
           <Testimony />
           </div>
       
 
         </div>
         <div className={"team"}>
-          <h2>Meet Team</h2>
+          <h2 > <center>Meet Team</center> </h2>
           <div className="team__members">
           <Team__members />
           </div>

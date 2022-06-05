@@ -63,3 +63,12 @@ border-color: none;
   width: max-content;
   padding: 0.5rem 1rem;
 }
+
+
+.dropdown, .mydropdown, .dropdown-toggle,.dropdown-toggle:active, .dropdown-toggle-focus, .show:active{
+  border: 0px !important;
+  box-shadow:none !important;
+}
+.btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow:none !important;
+}

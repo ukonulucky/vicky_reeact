@@ -8,7 +8,7 @@ import "../styles/Navbar.css"
 function Navbar() {
     
     return (
-      <div className={"navbar_Navbar"}>
+      <div className={"navbar_Navbar "}>
         
         <nav className="navbar navbar-expand-sm navbar-light ">
           <div className="container-fluid ps-2 pe-2 ms-3 me-3 ">
@@ -37,24 +37,16 @@ function Navbar() {
                         Home
                     </Link>
                   </li>
-                  {/* <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown link
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li> */}
+                  
+  
                   <li className={`nav-item`}>
                     <div className={"items"}>
                       <Dropdown className={"mydropdown"}>
-                        <Dropdown.Toggle className="my-dropdown">
+                        <Dropdown.Toggle className="my-dropdown_nav">
                           Search For Property
                         </Dropdown.Toggle>
                         <Dropdown.Menu className="my-dropdown">
-                          {/* <Dropdown.Item href="/let">
+                           {/* <Dropdown.Item href="/let">
                             Property To let
                           </Dropdown.Item> */}
                           <Dropdown.Item href="/sales">
@@ -65,8 +57,8 @@ function Navbar() {
                           </Dropdown.Item> */}
                         </Dropdown.Menu>
                       </Dropdown>
-                      </div>
-                  </li>
+                      </div> 
+                 </li> 
                   <li className="nav-item" >
                     <Link to="/about" className={"items"}>
                     
@@ -75,15 +67,15 @@ function Navbar() {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="#info" className={"items"}>
+                    <a href="#info" className={"items"}>
                         Contact Us
-                    </Link>
+                    </a>
                   </li>
-                  <li className={`nav-item`}>
+                  {/* <li className={`nav-item`}>
                     <Link to="/admin" className={"items"}>
                         Admin
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
 
               </div>

@@ -7,6 +7,9 @@ import Sale from "./Pages/Sale";
 import About from "./Pages/About";
 import Home from "./Pages/Index";
 import Navbar from "./components/Navbar"
+import { FaWhatsapp } from "react-icons/fa"
+import "./styles/Whatsapp.scss"
+
 function App() {
   return (
     <div className="myApp">
@@ -15,27 +18,36 @@ function App() {
      <Routes>
    
        <Route path="/" element={
-         <>
+         <div  className="Whatsapp1">
        <Navbar />
            <Home />
-           <Footer /> 
-        </>
+              <Footer />
+      <a href="http://wa.me/+2347063033152" target="_blank" rel="noreferrer"  className={ "chat"} >
+            <FaWhatsapp color="darkblue" size="60px"/>
+       </a>
+        </div>
       } /> 
    
      
        <Route path="/sales" element={
-         <>
+          <div  className="Whatsapp1">
             <Navbar />
            <Sale />
-           <Footer /> 
-         </>
+              <Footer />
+              <a href="http://wa.me/+2347063033152" target="_blank" rel="noreferrer"  className={"chat"} >
+            <FaWhatsapp color="darkblue" size="60px"/>
+       </a>
+       </div>
      } /> 
        <Route path="/about" element={
-         <>
+         <div  className="Whatsapp1">
           <Navbar />
         <About />
-        <Footer /> 
-        </>
+              <Footer />
+              <a href="http://wa.me/+2347063033152" target="_blank" rel="noreferrer"  className={"chat"} >
+            <FaWhatsapp color="darkblue" size="60px"/>
+       </a>
+       </div>
          
       } />
      <Route element={

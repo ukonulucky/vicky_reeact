@@ -1,14 +1,9 @@
-.wrapper {
+.team__members__wrapper {
   flex: 1;
   display: block;
   margin: 0 auto;
-  width: 20vw;
   margin: 2vw;
   height: max-content;
- 
-  @media screen and (max-width: 859px) {
-    width: 45vw;
-  }
   
   .container__new {
     display: flex;

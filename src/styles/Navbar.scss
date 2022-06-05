@@ -63,14 +63,14 @@ $tertiary: rgb(117, 230, 218);
     }
   }
 }
- .dropDown{
+ .my-dropdown_nav{
   font-family: Roboto;
   flex: 1;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   font-size: 1.3rem;
-  padding: 0 0.5rem;
+  padding: 0 0.8rem;
   color: #160E39 !important;
   font-weight: normal;
   text-transform: uppercase;
@@ -104,7 +104,11 @@ $tertiary: rgb(117, 230, 218);
   border:0px !important;
   &:hover{
     border:0px !important;
-    
+  }
+}
 
+.nav-item{
+  @media screen and (max-width:560px) {
+   margin: 0.2rem 0;
   }
 }

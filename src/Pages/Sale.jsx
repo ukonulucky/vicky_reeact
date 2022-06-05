@@ -1,4 +1,3 @@
-import { Co2Sharp } from "@mui/icons-material";
 import React from "react"
 import "../styles/properties__sale__slider.css"
 // import styles from "../styles/properties__sale.scss"

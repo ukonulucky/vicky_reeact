@@ -2,13 +2,9 @@ import React, { useState}  from 'react'
 import "../styles/Footer.css"
 import { Link } from "react-router-dom"
 import axios from "axios"
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
-import { HiLocationMarker,HiPhone, HiMail  } from "react-icons/hi"
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedinIn, FaPhone, FaEnvelope  } from "react-icons/fa"
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faPhone } from '@fortawesome/free-solid-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faLocationDot, faFaceFrownOpen } from '@fortawesome/free-solid-svg-icons'
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 function Footer() {
   const [spiner, setSpiner] = useState({
    state: "none"
@@ -27,7 +23,7 @@ function Footer() {
       try {
         if (userState.email !== "" & userState.name !== "") {
           setSpiner({
-            state: "block"
+            state: "block" 
           })
          
           const dataSubmit = await axios.post("http://localhost:5000/subscribe",data)
@@ -66,7 +62,7 @@ function Footer() {
    
   }
   return (
-      <div className="container__footer container-fluid">
+      <div className="container__footer container-fluid" id="info">
        <div className="wrapper">
         <div className="cols">
           <div className="title">
@@ -115,34 +111,35 @@ function Footer() {
           <span></span>
           </div>
           <div className="content">
-          <span>   <FontAwesomeIcon icon={ faLocationDot } /></span>
+          
+            <span>   <FontAwesomeIcon icon={ faLocationDot } size="sm" vertical-align="center" /></span>
           <span> Ajah </span>
           </div>
           <div className="content">
-          <span> <FontAwesomeIcon icon={faPhone} /></span>
+          <span> <FaPhone size="1.2rem" vertical-align="center" /> </span>
           <span>+234 9028506555</span>
           </div>
           <div className="content">
-          <span> <FontAwesomeIcon icon={ faEnvelope} /></span>
-            <span><a href="https://www.gmail.com">Vickshomess@g </a></span> 
+          <span> <FaEnvelope size="1.2rem" vertical-align="center" /></span>
+            <span><a href="https://www.gmail.com">Vickshomess@gmail.com </a></span> 
           </div>
           <div className="content">
-            <span> <img src="/imgs/icons/facebookIcon.png"
-              width="20px" height="25px" 
-            /></span>
-            <span><a href="https://www.facebook.com/VeeksHomes/" target="_blank">Vick </a></span>
+            <span> <FaFacebook  size="1.2rem" vertical-align="center" /> </span>
+            <span><a href="https://www.facebook.com/VeeksHomes/" target="_blank" rel="noreferrer" >VeeksHomes </a></span>
           </div>
           <div className="content">
-            <span> <LazyLoadImage effect="blur" src="/imgs/icons/twitterIcon5.png" width="20px" height="25px"/></span>
-            <span><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Ftwitter.com%2Fvickshomess%3Fs%3D21%26fbclid%3DIwAR0AaefyyC2Q5Lmd5R17hiB3pVI9a8-wML7S8r63YMS8oZ28q3Zw8EaJZGw&h=AT3hPaTcm1yMTIaijNXf-hAy7Z1bwauMXWYoRquUZI8mMdGr-hLswrQGKzoepz-6Aa7AS7BPHtKRKvi7ySvcD-l6G9yNBYKpRpk-QIR6CpeaW_uD2EXrIfdXbPDwHw" target="_blank">@VicksHomes</a></span>
+            <span>
+              <FaTwitter size="1.2rem" vertical-align="center" /> 
+            </span>
+            <span><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Ftwitter.com%2Fvickshomess%3Fs%3D21%26fbclid%3DIwAR0AaefyyC2Q5Lmd5R17hiB3pVI9a8-wML7S8r63YMS8oZ28q3Zw8EaJZGw&h=AT3hPaTcm1yMTIaijNXf-hAy7Z1bwauMXWYoRquUZI8mMdGr-hLswrQGKzoepz-6Aa7AS7BPHtKRKvi7ySvcD-l6G9yNBYKpRpk-QIR6CpeaW_uD2EXrIfdXbPDwHw" target="_blank" rel="noreferrer" >@VicksHomes</a></span>
+          </div>
+          <div className="content"> 
+            <span> <FaInstagram size="1.2rem" vertical-align="center" /> </span>
+            <span><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fvickshomes%3Futm_medium%3Dcopy_link%26fbclid%3DIwAR01HhYqFJUJPdy5MUdtqoPy3gCF2FPjZN84hG9PAY8jnHO24wXlAP6lfwk&h=AT3hPaTcm1yMTIaijNXf-hAy7Z1bwauMXWYoRquUZI8mMdGr-hLswrQGKzoepz-6Aa7AS7BPHtKRKvi7ySvcD-l6G9yNBYKpRpk-QIR6CpeaW_uD2EXrIfdXbPDwHw" target="_blank" rel="noreferrer" >ViHomes</a></span>
           </div>
           <div className="content">
-            <span> <LazyLoadImage src="/imgs/icons/instagramIcon.png" width="20px" height="25px"/></span>
-            <span><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fvickshomes%3Futm_medium%3Dcopy_link%26fbclid%3DIwAR01HhYqFJUJPdy5MUdtqoPy3gCF2FPjZN84hG9PAY8jnHO24wXlAP6lfwk&h=AT3hPaTcm1yMTIaijNXf-hAy7Z1bwauMXWYoRquUZI8mMdGr-hLswrQGKzoepz-6Aa7AS7BPHtKRKvi7ySvcD-l6G9yNBYKpRpk-QIR6CpeaW_uD2EXrIfdXbPDwHw" target="_blank">ViHomes</a></span>
-          </div>
-          <div className="content">
-            <span> <LazyLoadImage src="/imgs/icons/linkedIn.png" width="20px" height="25px"/></span>
-            <span><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fvicks-homes%2F%3Ffbclid%3DIwAR0f-ClL_mJvPadzZFgUdTYxN_C37MyUnWGjiFyQ7fN-PdH6Pnco5Vq9Rm0&h=AT3hPaTcm1yMTIaijNXf-hAy7Z1bwauMXWYoRquUZI8mMdGr-hLswrQGKzoepz-6Aa7AS7BPHtKRKvi7ySvcD-l6G9yNBYKpRpk-QIR6CpeaW_uD2EXrIfdXbPDwHw" target="_blank">Vick </a></span>
+            <span> <FaLinkedinIn size="1.2rem" vertical-align="center" /></span>
+            <span><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fvicks-homes%2F%3Ffbclid%3DIwAR0f-ClL_mJvPadzZFgUdTYxN_C37MyUnWGjiFyQ7fN-PdH6Pnco5Vq9Rm0&h=AT3hPaTcm1yMTIaijNXf-hAy7Z1bwauMXWYoRquUZI8mMdGr-hLswrQGKzoepz-6Aa7AS7BPHtKRKvi7ySvcD-l6G9yNBYKpRpk-QIR6CpeaW_uD2EXrIfdXbPDwHw" target="_blank" rel="noreferrer"  >vicks-homes </a></span>
           </div>
         </div>
         <div className="cols">
