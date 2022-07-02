@@ -51,7 +51,7 @@ export default class Team__members extends Component {
       arrows:true,
       responsive: [
         {
-          breakpoint: 5000,
+          breakpoint: 50000,
           settings: {
             slidesToShow: 4,
             slidesToScroll: 1,

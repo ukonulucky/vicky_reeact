@@ -16,6 +16,14 @@
       margin: 0 auto;
       height: 20vw;
       width: 20vw;
+      @media (min-width:481px) and (max-width:560px) {
+        height: 30vh;
+         width: 40vw;
+      }
+      @media screen and (max-width:480px) {
+        height: 35vh;
+      width: 80vw;
+      }
     
     }
     .info {
