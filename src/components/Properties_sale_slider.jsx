@@ -8,14 +8,13 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 function Properties__sale__slider({ picArray, link, details}) {
   const carouselArray = picArray.map((i, j) => {
       return  <CarouselItem key={ j }>
-        <LazyLoadImage
-          effect="blur"
-     
-        src={ i }
-          alt="slider"
-          width="100%"
-          heigth="60vh"
-    />
+        <img
+      src={ i }
+        alt="slider"
+        width="100%"
+        heigth="60vh"
+       />
+          
    </CarouselItem>
  
   })

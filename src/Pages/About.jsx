@@ -2,6 +2,7 @@ import "../styles/About.css";
 import React from "react";
 import AppsIcon from "@mui/icons-material/Apps";
 import ToolTipDisplay from "../components/ToolTips";
+import frontView from "../images/for__sale/flat1/flat1/frontview.webp"
 // import { img } from 'react-lazy-load-image-component';
 // import 'react-lazy-load-image-component/src/effects/blur.css';
 
@@ -15,7 +16,9 @@ function About({ word, heading }) {
               <img
                 width="100%"
                 height="100%"
-                src="https://drive.google.com/uc?export=view?&id=1LxHAwR_u5e91Hgdoaf8OSmGvmuilE2qO"
+                
+                src={ frontView }
+                // "https://drive.google.com/uc?export=view?&id=1LxHAwR_u5e91Hgdoaf8OSmGvmuilE2qO"
               />
             </div>
           </div>

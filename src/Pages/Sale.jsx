@@ -2,24 +2,28 @@ import React from "react"
 import "../styles/properties__sale__slider.css"
 // import styles from "../styles/properties__sale.scss"
 import Properties__sale__slider from "../components/Properties_sale_slider";
+import { flat1 } from "./houseSaleImageArray"
 
 function Sale() {
   const saleArray = [
     {
       link: "5 BEDROOM DUPLEX",
       details: "LUXURY LISTING ‼‼‼  5 BEDROOM DETACHED DUPLEX WITH A SWIMMING POOL,  AND A ROOM BQ FOR SALE. LOCATION: IKOTA, LEKKI LAGOS",
-      imageArray: ["https://drive.google.com/uc?export=view?&id=1LxHAwR_u5e91Hgdoaf8OSmGvmuilE2qO","https://drive.google.com/uc?export=view?&id=1zKh_ZAXFlTd7d8Tsz7wNj1QV3Cb2CQPw","https://drive.google.com/uc?export=view?&id=13Qv_AB5e9HkrNJvk6OC2Xjd1m4O5F4lX","https://drive.google.com/uc?export=view?&id=1Pv-Y2YrIMLX0jGjT0NpF5pSVqE6L5xNp","https://drive.google.com/uc?export=view?&id=1A8iXlUnoA2dcIWk3Wg1bqZjA_dt8x70R","https://drive.google.com/uc?export=view?&id=114R-qeFKD9NmF0_KXoAyqqRoLn8WcAy1"]
+      imageArray: [
+        // "https://drive.google.com/uc?export=view?&id=1LxHAwR_u5e91Hgdoaf8OSmGvmuilE2qO", "https://drive.google.com/uc?export=view?&id=1zKh_ZAXFlTd7d8Tsz7wNj1QV3Cb2CQPw", "https://drive.google.com/uc?export=view?&id=13Qv_AB5e9HkrNJvk6OC2Xjd1m4O5F4lX", "https://drive.google.com/uc?export=view?&id=1Pv-Y2YrIMLX0jGjT0NpF5pSVqE6L5xNp", "https://drive.google.com/uc?export=view?&id=1A8iXlUnoA2dcIWk3Wg1bqZjA_dt8x70R", "https://drive.google.com/uc?export=view?&id=114R-qeFKD9NmF0_KXoAyqqRoLn8WcAy1"
+       ...flat1
+      ]
     },
     {
       link: "7 BEDROOM DUPLEX",
       details: "NEW LISTING ‼‼‼ FULLY DETACHED 6 BEDROOM DUPLEX WITH AN OPEN ROOF TERRACE, SWIMMING POOL AND BQ FOR SALE.",
       imageArray: ["https://drive.google.com/uc?export=view?&id=1CGERNpyHBeBh1oY-S970Hx2LDZ_lbvAj","https://drive.google.com/uc?export=view?&id=15J2DbUgIQ-AeX07NrpiuobxnK9O69wvN","https://drive.google.com/uc?export=view?&id=1sbsaD5tyaF0ShH8mUZEfql_6lTSjchn8","https://drive.google.com/uc?export=view?&id=1TW2lOQfuGCqCXLio0ZbanoNn2LR8tuhL","https://drive.google.com/uc?export=view?&id=1B6o5pfvikMPlC2sWv_yf5GCyTMTp68Dv","https://drive.google.com/uc?export=view?&id=130X-ZxNwVLEaGtjxMUK2zbPvEEe_qLvr"],
     },   
-    {
-      link: "6 BEDROOM DUPLEX",
-      details: "NEW LISTING ‼‼‼ 6 BEDROOM DETACHED DUPLEX, AND ONE ROOM BQ FOR SALE.",
-      imageArray: [" https://drive.google.com/uc?export=view?&id=1gC5DQa156joRZYKQhlpujPTyI4ep-oZp","/images/for__sale/flat3/flat3__view1.webp","/images/for__sale/flat3/flat3__view2.webp","/images/for__sale/flat3/flat3__view3.webp","/images/for__sale/flat3/flat3__view4.webp","/images/for__sale/flat3/flat3__view5.webp","/images/for__sale/flat3/flat3__view6.webp","/images/for__sale/flat3/flat3__view7.webp","/images/for__sale/flat3/flat3__view8.webp"]
-    },
+    // {
+    //   link: "6 BEDROOM DUPLEX",
+    //   details: "NEW LISTING ‼‼‼ 6 BEDROOM DETACHED DUPLEX, AND ONE ROOM BQ FOR SALE.",
+    //   imageArray: [" https://drive.google.com/uc?export=view?&id=1gC5DQa156joRZYKQhlpujPTyI4ep-oZp","/images/for__sale/flat3/flat3__view1.webp","/images/for__sale/flat3/flat3__view2.webp","/images/for__sale/flat3/flat3__view3.webp","/images/for__sale/flat3/flat3__view4.webp","/images/for__sale/flat3/flat3__view5.webp","/images/for__sale/flat3/flat3__view6.webp","/images/for__sale/flat3/flat3__view7.webp","/images/for__sale/flat3/flat3__view8.webp"]
+    // },
     {
       link: "5 BEDROOM DETACHED DUPLEX",
       details: "NEW LISTING ‼‼‼ 5 BEDROOM DETACHED DUPLEX WITH A ROOM BQ FOR SALE.",

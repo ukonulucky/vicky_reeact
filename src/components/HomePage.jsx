@@ -1,9 +1,6 @@
 import { Link } from "react-router-dom";
-
-
 import React from "react";
-
-  import Testimony from "./Testimony";
+import Testimony from "./Testimony";
 // import Home_section from "./Home_section";
 import "../styles/HomePage.css";
  import Properties from "./Properties";
@@ -11,7 +8,8 @@ import Team__members from "./Team_members";
 
 // import MultipleItems from "./Sliders3";
 // import SimpleSlider from "./Slider2";
-
+import flat1 from "../"
+import flat2 from "../images/for__sale/flat4/flat4__frontview.jpg"
 function HomePage() {
   
   // const HouseArray = [

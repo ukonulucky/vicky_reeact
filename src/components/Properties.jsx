@@ -1,7 +1,6 @@
 import React from "react"
 import "../styles/Properties.css"
 import { Link } from "react-router-dom"
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 function Properties({ url, details, link }){
   return (
@@ -10,15 +9,13 @@ function Properties({ url, details, link }){
       <div className={"text"}>
        
               <div className={"pic"}>
-          <LazyLoadImage
+          <img
             // effect="blur"
                 src={ url }
             alt="Property for Sale"
             width="100%"
             height="100%"
-            // className=" properties_pic"
-           
-           
+            // className=" properties_pic
           />
         <span>for sale</span>
               </div>

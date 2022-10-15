@@ -5,37 +5,69 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+
+import staff1 from "../images/staff/staffs/developerPic.jpg"
+import staff2 from "../images/staff/staffs/lawyer.jpg"
+import staff3 from "../images/staff/staffs/staff1.jpg"
+import staff4 from "../images/staff/staffs/staff2.jpg"
+
+
+
+
 export default class Team__members extends Component {
   constructor() {
     super()
     this.teamMembersArray = [
       {
-        img:  "https://drive.google.com/uc?export=view?&id=1ifVi4A3bBQV-g9ItM3cwkCZgeYGYqi-k",
+        img:staff3,
+      //   img:  "https://drive.google.com/uc?export=view?&id=1ifVi4A3bBQV-g9ItM3cwkCZgeYGYqi-k",
         fullName: "Victoria Ogbonna",
         details: "Cheif Executive Officer",
       },
       {
-        
-        img: "https://drive.google.com/uc?export=view?&id=1phIHez7GYEUROOqVll2Q8oW4nz4yzfvQ",
+        img:staff4,
+        // img: "https://drive.google.com/uc?export=view?&id=1phIHez7GYEUROOqVll2Q8oW4nz4yzfvQ",
         fullName: "Eddy Usong",
         details: "Brand And Digital Consultant",
       },
      
       {
-        img: "https://drive.google.com/uc?export=view?&id=1jfF3-1o-Ht126Pv9iqI6nk-dLU-t6Bxh",
+        img:staff1,
+        // img: "https://drive.google.com/uc?export=view?&id=1jfF3-1o-Ht126Pv9iqI6nk-dLU-t6Bxh"
         fullName: "Ukonu Lucky",
         details: "Website Developer",
       },
       {
-        img:  "https://drive.google.com/uc?export=view?&id=1ifVi4A3bBQV-g9ItM3cwkCZgeYGYqi-k",
+        img:staff2,
+        // img: "https://drive.google.com/uc?export=view?&id=14-ElWULGvQPYEkSr1bNFnttDlIkdes0v",
+        fullName: "Noble Reuer",
+        details: "Site Manager",
+      },
+      {
+        img:staff3,
+      //   img:  "https://drive.google.com/uc?export=view?&id=1ifVi4A3bBQV-g9ItM3cwkCZgeYGYqi-k",
         fullName: "Victoria Ogbonna",
         details: "Cheif Executive Officer",
       },
       {
-        img: "https://drive.google.com/uc?export=view?&id=14-ElWULGvQPYEkSr1bNFnttDlIkdes0v",
+        img:staff4,
+        // img: "https://drive.google.com/uc?export=view?&id=1phIHez7GYEUROOqVll2Q8oW4nz4yzfvQ",
+        fullName: "Eddy Usong",
+        details: "Brand And Digital Consultant",
+      },
+      {
+        img:staff1,
+        // img: "https://drive.google.com/uc?export=view?&id=1jfF3-1o-Ht126Pv9iqI6nk-dLU-t6Bxh"
+        fullName: "Ukonu Lucky",
+        details: "Website Developer",
+      },
+      {
+        img:staff2,
+        // img: "https://drive.google.com/uc?export=view?&id=14-ElWULGvQPYEkSr1bNFnttDlIkdes0v",
         fullName: "Noble Reuer",
         details: "Site Manager",
-      }
+      },
+     
     ]
   }
    
