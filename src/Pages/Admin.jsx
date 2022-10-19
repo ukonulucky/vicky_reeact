@@ -2,19 +2,14 @@ import React from 'react'
 import link  from "react-router-dom"
 import styles from "../styles/Admin.css" 
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import axios from "axios"
+import "../styles/Admin.css"
+import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword  } from "firebase/auth";
+import app from "../firebaseConfig.js"
 
 function Login() {
-    // const dispatch = useDispatch()
-    //  const user = (user_email) => {
-    //     return {
-    //         type: "ASSIGN_USER",
-    //         payload: user_email
-    //    }
-    // }
-    
-    // const history = useHistory()
-    // const [cookies, setCookies] = useCookies(["user"]);
+    const auth = getAuth(app);
     
     const [loginData, setloginData] = useState({
         email: "",
@@ -25,30 +20,42 @@ function Login() {
         emailError: "",
         passwordError: ""
     })
-    
-    const post = async () => {
+   
+    const signInUser = async() => {
+    try {
+            
+   const res = await signInWithEmailAndPassword(auth, loginData.email, loginData.password)
+        if (res) {
+     
+            const user = res.user;
+            console.log(user)
+            alert("user signed in success fully")
+   }
+    } catch (error) {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode, errorMessage)
+    }
+}
+
+    const createAccount = async () => {
         try {
-            const response = await axios.post("http://localhost:5000/admin_create", { loginData },{ withCredentials: true })
-            const { data } = response
-           console.log(response)
-            if (response.status !== 201) {
-                seterrorText(
-                    {
-                     emailError: data.email, passwordError: data.password
-                    })
+        const res = await   createUserWithEmailAndPassword(auth, loginData.email, loginData.password)
+            if (res) {
+                const user = res.user;
+                alert("user creation successful")
             }
-            if (response.status === 201) {
-                console.log(response.data)
-                dispatch(user(response.data.email)) &&  history.push("/")
-              
-           }
+  
         } catch (error) {
-          console.log(error)
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            alert(error.code, error.message)
+            // ..
   
         }
      }
     
-    const handleSubmit = (e) => {
+    const handleLogin = (e) => {
         e.preventDefault()
        
         if (loginData.email === "") {
@@ -65,37 +72,64 @@ function Login() {
            )
         }
    else if (loginData.email !== "" && loginData.password !== "") {
-            post()
+    seterrorText(
+        {
+           passwordError:"", emailError: ""
+       }
+   )
+            signInUser()
+        } 
+    }
+
+
+    const handleSignUp = (e) => {
+        e.preventDefault()
+       
+        if (loginData.email === "") {
+            seterrorText(
+                {
+                   ...errorText, emailError: "Email is required"
+               }
+           )
+        } else if (loginData.password === "") {
+            seterrorText(
+                {
+                   ...errorText, passwordError: "Password is required"
+               }
+           )
+        }
+   else if (loginData.email !== "" && loginData.password !== "") {
+    seterrorText(
+        {
+           passwordError:"", emailError: ""
+       }
+   )
+            createAccount()
         } 
     }
     return (
-        <div className={  styles.login_one}>
+        <div className="admin">
            
-            <div className={ styles.login_container}>
+            <div className={ "admin__container"}>
                 <h1>Login</h1>
-                <form action="" onSubmit={handleSubmit}>
+                <form>
                     <h5>E-mail</h5>
                     <input type="text" placeholder="Please enter your email." onChange={(e) => {
                         setloginData({...loginData,
                             email: e.target.value
                         })
                     }} required={ true } />
-                    <div className={ styles.error}>{ errorText.emailError }</div>
+                    <div className={"admin__error"}>{ errorText.emailError }</div>
                     <h5>Password</h5>
                     <input type="password" placeholder="Please enter your password." onChange={(e) => {
                          setloginData({...loginData,
                             password: e.target.value
                         })
                     }} required={ true } />
-                    <div className={ styles.error}>{ errorText.passwordError }</div>
-                    <button className={ styles.login_signinButton}>Sign In</button>
+                    <div className={'admin__error'}>{ errorText.passwordError }</div>
+                    <button onClick={handleLogin} className={"admin__LoginIn"}>Login In</button>
+                    <button onClick={handleSignUp} className={"admin__SignIn"}>Sign Up</button>
                 </form>
-                <Link  className={styles.link} to="/Password_retreive">
-                   
-                    Forgot PassWord? Click To Retreive Password
-                   
-    
-               </Link>
                 
             </div>
         </div>

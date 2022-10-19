@@ -104,6 +104,12 @@ function Footer() {
          </Link>
         <hr />
           </div>
+          <div className="content">
+            <Link to="/admin">
+                Admin
+         </Link>
+        <hr />
+          </div>
         </div>
         <div className="cols">
         <div className="title">

@@ -9,6 +9,7 @@ import Home from "./Pages/Index";
 import Navbar from "./components/Navbar"
 import { FaWhatsapp } from "react-icons/fa"
 import "./styles/Whatsapp.scss"
+import Login from "./Pages/Admin"
 
 function App() {
   return (
@@ -49,7 +50,9 @@ function App() {
        </a>
        </div>
          
-      } />
+          } />
+          <Route path="/admin" element={<Login />}
+          />
      <Route element={
        <h2>
          PAge not Found
