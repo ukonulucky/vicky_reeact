@@ -11,7 +11,7 @@ function About({ word, heading }) {
     return (
       <div className={"container__about"}>
         <div className={"wrapperOuter"}>
-          <div className={'wrapper__about'}>
+          <div className={'wrapper'}>
             <div className={"pic"}>
               <img
                 width="100%"
@@ -93,7 +93,6 @@ function About({ word, heading }) {
                   <div className={"pic"}>
                     <div className={"innerPic"}>
                     <img src="https://drive.google.com/uc?export=view?&id=15w34rPvmG_hIAv5pUCvYQLnt4Ncg-IUR"  className={"logo"} alt="icon" />
-
                     </div>    
                   </div>
                 </span>

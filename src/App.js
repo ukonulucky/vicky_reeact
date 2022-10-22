@@ -1,7 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.min.js"
 import "bootstrap/js/src/dropdown.js"
+
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { useSelector } from "react-redux"
+
+
 import Footer from "./components/Footer"
 import Sale from "./Pages/Sale";
 import About from "./Pages/About";
@@ -9,9 +14,12 @@ import Home from "./Pages/Index";
 import Navbar from "./components/Navbar"
 import { FaWhatsapp } from "react-icons/fa"
 import "./styles/Whatsapp.scss"
-import Login from "./Pages/Admin"
+import Login from "./Pages/Login"
+import Admin from "./Pages/Admin"
 
 function App() {
+  const isLoggedIn = useSelector(state => state.propertyStore.isLoggedIn)
+  console.log(isLoggedIn)
   return (
     <div className="myApp">
       <Router>
@@ -51,9 +59,11 @@ function App() {
        </div>
          
           } />
-          <Route path="/admin" element={<Login />}
+          <Route path="/admin" element={
+            isLoggedIn ? <Admin /> : <Login />
+          }
           />
-     <Route element={
+     <Route path="*" element={
        <h2>
          PAge not Found
        </h2>
