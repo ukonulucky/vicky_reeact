@@ -39,7 +39,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 400px;
+  height: 450px;
   width: 100%;
 }
 
@@ -243,6 +243,7 @@
 }
 
 .container__about .wrapperOuter .content3 .wrapper__about:nth-child(2) .carousel .pic {
+  border: 1px solid red;
   position: relative;
   height: 40vh;
 }
@@ -792,14 +793,19 @@
 
 .footer .value1 .col1 .list span:nth-child(1) .pic {
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   padding: 0.5rem;
 }
 
 .footer .value1 .col1 .list span:nth-child(1) .pic .logo {
   -webkit-filter: none;
           filter: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  width: 100%;
 }
 
 .footer .value1 .col1 .list span:nth-child(1) .pic .logo:hover {
